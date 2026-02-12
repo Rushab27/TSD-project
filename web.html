@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Master the Machine</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;800&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container" id="view-home">
+    <div class="hero">
+        <h1>MASTER THE <span class="gradient-text">MACHINE</span></h1>
+        <p>An interactive architectural breakdown of modern computing systems.</p>
+    </div>
+
+    <div class="card-grid">
+        <a href="#view-hardware" class="glass-card">
+            <img src="https://images.unsplash.com/photo-1550009158-9ebf69173e03?q=80&w=1200" class="card-img" alt="Hardware">
+            <div class="card-content">
+                <h2>Hardware <span style="color:var(--primary)">//</span> Physical</h2>
+                <p>Explore the nanoscopic circuits, silicone wafers, and mechanical engineering.</p>
+            </div>
+        </a>
+
+        <a href="#view-software" class="glass-card">
+            <img src="https://img.freepik.com/free-vector/web-development-isometric-concept-composition-illustration_1284-55922.jpg?t=st=1770880336~exp=1770883936~hmac=43395f45d95511e16a4dd2ecaedc0c3eb6d3bbbe236e369f628f1b016d6f4b7d" class="card-img" alt="Software">
+            <div class="card-content">
+                <h2>Software <span style="color:var(--accent)">//</span> Logical</h2>
+                <p>Decode the algorithms, kernels, and virtual structures of intelligence.</p>
+            </div>
+        </a>
+    </div>
+</div>
+
+<div id="view-hardware" class="view-overlay">
+    <div class="dashboard-container">
+        <div class="dashboard-header">
+            <div>
+                <h1 class="gradient-text">HARDWARE STACK</h1>
+                <p style="font-size: 20px; color: var(--text-light);">Select a component to inspect architecture.</p>
+            </div>
+            <a href="#" class="back-btn">← Return Home</a>
+        </div>
+       
+        <div class="tech-grid">
+            <a href="#det-cpu" class="tech-item">
+                <h3 style="font-size:24px; margin:0 0 10px;">Central Processor (CPU)</h3>
+                <p style="color:var(--text-light); margin:0;">Click to view architecture details.</p>
+            </a>
+            <a href="#det-gpu" class="tech-item">
+                <h3 style="font-size:24px; margin:0 0 10px;">Graphics Unit (GPU)</h3>
+                <p style="color:var(--text-light); margin:0;">Click to view architecture details.</p>
+            </a>
+            <a href="#det-ram" class="tech-item">
+                <h3 style="font-size:24px; margin:0 0 10px;">Memory (RAM)</h3>
+                <p style="color:var(--text-light); margin:0;">Click to view architecture details.</p>
+            </a>
+            <a href="#det-storage" class="tech-item">
+                <h3 style="font-size:24px; margin:0 0 10px;">NVMe Storage</h3>
+                <p style="color:var(--text-light); margin:0;">Click to view architecture details.</p>
+            </a>
+             <a href="#det-cooling" class="tech-item">
+                <h3 style="font-size:24px; margin:0 0 10px;">Thermal Systems</h3>
+                <p style="color:var(--text-light); margin:0;">Click to view architecture details.</p>
+            </a>
+        </div>
+    </div>
+</div>
+
+<div id="view-software" class="view-overlay">
+    <div class="dashboard-container">
+        <div class="dashboard-header">
+            <div>
+                <h1 class="gradient-text">SOFTWARE STACK</h1>
+                <p style="font-size: 20px; color: var(--text-light);">Select a system to inspect logic.</p>
+            </div>
+            <a href="#" class="back-btn">← Return Home</a>
+        </div>
+       
+        <div class="tech-grid">
+            <a href="#det-os" class="tech-item">
+                <h3 style="font-size:24px; margin:0 0 10px;">Operating System</h3>
+                <p style="color:var(--text-light); margin:0;">Click to view architecture details.</p>
+            </a>
+            <a href="#det-ai" class="tech-item">
+                <h3 style="font-size:24px; margin:0 0 10px;">Artificial Intelligence</h3>
+                <p style="color:var(--text-light); margin:0;">Click to view architecture details.</p>
+            </a>
+            <a href="#det-sec" class="tech-item">
+                <h3 style="font-size:24px; margin:0 0 10px;">Cybersecurity</h3>
+                <p style="color:var(--text-light); margin:0;">Click to view architecture details.</p>
+            </a>
+            <a href="#det-cloud" class="tech-item">
+                <h3 style="font-size:24px; margin:0 0 10px;">Cloud Computing</h3>
+                <p style="color:var(--text-light); margin:0;">Click to view architecture details.</p>
+            </a>
+        </div>
+    </div>
+</div>
+
+<div id="det-cpu" class="view-overlay">
+    <div class="dashboard-container">
+        <a href="#view-hardware" class="back-btn" style="margin-bottom: 20px;">← Back to Hardware</a>
+        <div class="detail-layout">
+            <div>
+                <img src="https://i.extremetech.com/imagery/content-types/05NABDhY6lbreVFgKKVwnUY/hero-image.fit_lim.size_1600x900.v1734104048.jpg" class="detail-img" alt="CPU">
+            </div>
+            <div class="detail-info">
+                <h1 style="font-size: 48px; margin-top: 0;">Central Processor (CPU)</h1>
+                <div class="spec-card"><b>Lithography (nm):</b> The physical size of transistors. Smaller means more power in less space.</div>
+                <div class="spec-card"><b>Clock Cycles:</b> The rhythm at which the CPU executes instructions (measured in GHz).</div>
+                <div class="spec-card"><b>Hyper-Threading:</b> Virtualizing a single core into two to handle parallel tasks efficiently.</div>
+                <div class="spec-card"><b>Cache (L1/L2/L3):</b> Ultra-fast memory located directly on the chip to reduce latency.</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="det-gpu" class="view-overlay">
+    <div class="dashboard-container">
+        <a href="#view-hardware" class="back-btn" style="margin-bottom: 20px;">← Back to Hardware</a>
+        <div class="detail-layout">
+            <div>
+                <img src="https://media.hswstatic.com/eyJidWNrZXQiOiJjb250ZW50Lmhzd3N0YXRpYy5jb20iLCJrZXkiOiJnaWZcL2dyYXBoaWNzLWNhcmQtdXBkYXRlMS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjgyOH19fQ==" class="detail-img" alt="GPU">
+            </div>
+            <div class="detail-info">
+                <h1 style="font-size: 48px; margin-top: 0;">Graphics Unit (GPU)</h1>
+                <div class="spec-card"><b>Parallel Processing:</b> Unlike CPUs, GPUs use thousands of cores to calculate pixels simultaneously.</div>
+                <div class="spec-card"><b>VRAM (GDDR6X):</b> Specialized memory with massive bandwidth for textures and 3D geometry.</div>
+                <div class="spec-card"><b>Ray Tracing:</b> Hardware acceleration for calculating real-time light paths and reflections.</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="det-ram" class="view-overlay">
+    <div class="dashboard-container">
+        <a href="#view-hardware" class="back-btn" style="margin-bottom: 20px;">← Back to Hardware</a>
+        <div class="detail-layout">
+            <div>
+                <img src="https://cdn.mos.cms.futurecdn.net/7dr4ML5wSoiYJJgDNTprcR-1200-80.jpg" class="detail-img" alt="RAM">
+            </div>
+            <div class="detail-info">
+                <h1 style="font-size: 48px; margin-top: 0;">Memory (RAM)</h1>
+                <div class="spec-card"><b>Volatile Storage:</b> Data is only retained while electricity flows; power off means data loss.</div>
+                <div class="spec-card"><b>Dual Channel:</b> Using two sticks doubles the communication bandwidth to the CPU.</div>
+                <div class="spec-card"><b>Timings (CL):</b> CAS Latency determines the delay between requesting data and receiving it.</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="det-storage" class="view-overlay">
+    <div class="dashboard-container">
+        <a href="#view-hardware" class="back-btn" style="margin-bottom: 20px;">← Back to Hardware</a>
+        <div class="detail-layout">
+            <div>
+                <img src="https://images.unsplash.com/photo-1597733336794-12d05021d510?auto=format&fit=crop&q=80&w=1200" class="detail-img" alt="SSD">
+            </div>
+            <div class="detail-info">
+                <h1 style="font-size: 48px; margin-top: 0;">NVMe Storage</h1>
+                <div class="spec-card"><b>NAND Flash:</b> Uses floating-gate transistors to trap electrons, storing data without power.</div>
+                <div class="spec-card"><b>PCIe Bus:</b> Connects directly to the CPU lanes, bypassing the slower SATA interface.</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="det-cooling" class="view-overlay">
+    <div class="dashboard-container">
+        <a href="#view-hardware" class="back-btn" style="margin-bottom: 20px;">← Back to Hardware</a>
+        <div class="detail-layout">
+            <div>
+                <img src="https://img.freepik.com/free-photo/cryptocurrency-mining-farm_23-2151954729.jpg?t=st=1770880230~exp=1770883830~hmac=3d84b11ed823f2f53427cb8c7abef7fd37cd33a6693fd58c23e3e5488521311b" class="detail-img" alt="Cooling">
+            </div>
+            <div class="detail-info">
+                <h1 style="font-size: 48px; margin-top: 0;">Thermal Systems</h1>
+                <div class="spec-card"><b>AIO Liquid:</b> All-In-One loops use a pump and radiator to move heat away from the chip.</div>
+                <div class="spec-card"><b>Heat Pipes:</b> Copper tubes with phase-change liquid that vaporizes to carry heat efficiently.</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="det-os" class="view-overlay">
+    <div class="dashboard-container">
+        <a href="#view-software" class="back-btn" style="margin-bottom: 20px;">← Back to Software</a>
+        <div class="detail-layout">
+            <div>
+                <img src="https://images.unsplash.com/photo-1629654297299-c8506221ca97?auto=format&fit=crop&q=80&w=1200" class="detail-img" alt="OS">
+            </div>
+            <div class="detail-info">
+                <h1 style="font-size: 48px; margin-top: 0;">Operating System</h1>
+                <div class="spec-card"><b>The Kernel:</b> The absolute core program that has complete control over everything in the system.</div>
+                <div class="spec-card"><b>Memory Paging:</b> Swapping inactive RAM data to the SSD when memory runs out.</div>
+                <div class="spec-card"><b>Interrupts:</b> Hardware signals (like a mouse click) that tell the CPU to pause and pay attention.</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="det-ai" class="view-overlay">
+    <div class="dashboard-container">
+        <a href="#view-software" class="back-btn" style="margin-bottom: 20px;">← Back to Software</a>
+        <div class="detail-layout">
+            <div>
+               
+                <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&q=80&w=1200" class="detail-img" alt="AI">
+            </div>
+            <div class="detail-info">
+                <h1 style="font-size: 48px; margin-top: 0;">Artificial Intelligence</h1>
+                <div class="spec-card"><b>Neural Networks:</b> Layers of algorithms designed to mimic human brain neuron connections.</div>
+                <div class="spec-card"><b>Inference:</b> The process of a trained model making a prediction based on new data.</div>
+                <div class="spec-card"><b>LLMs:</b> Large Language Models that predict the next logical word in a sequence.</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="det-sec" class="view-overlay">
+    <div class="dashboard-container">
+        <a href="#view-software" class="back-btn" style="margin-bottom: 20px;">← Back to Software</a>
+        <div class="detail-layout">
+            <div>
+                <img src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?auto=format&fit=crop&q=80&w=1200" class="detail-img" alt="Security">
+            </div>
+            <div class="detail-info">
+                <h1 style="font-size: 48px; margin-top: 0;">Cybersecurity</h1>
+                <div class="spec-card"><b>Encryption (AES-256):</b> Scrambling data so mathematically complex it would take billions of years to crack.</div>
+                <div class="spec-card"><b>Handshakes:</b> The secure negotiation between client and server to establish trust.</div>
+                <div class="spec-card"><b>Zero Day:</b> A vulnerability known to hackers but not yet fixed by the developers.</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="det-cloud" class="view-overlay">
+    <div class="dashboard-container">
+        <a href="#view-software" class="back-btn" style="margin-bottom: 20px;">← Back to Software</a>
+        <div class="detail-layout">
+            <div>
+                <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=1200" class="detail-img" alt="Cloud">
+            </div>
+            <div class="detail-info">
+                <h1 style="font-size: 48px; margin-top: 0;">Cloud Computing</h1>
+                <div class="spec-card"><b>Virtualization:</b> Running multiple 'virtual' computers on one single physical server.</div>
+                <div class="spec-card"><b>Scalability:</b> Automatically adding more servers during high traffic spikes.</div>
+                <div class="spec-card"><b>SaaS:</b> Software as a Service - using apps via browser rather than installing them.</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
